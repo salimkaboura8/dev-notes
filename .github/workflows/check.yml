@@ -1,0 +1,37 @@
+name: Notes check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Validate notes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Front matter, sections and README index
+        run: npm run check
+      - name: Site builds
+        run: npm run build
+      - name: Every internal link resolves
+        run: |
+          set -e
+          cd _site
+          missing=0
+          for page in $(find . -name '*.html'); do
+            dir=$(dirname "$page")
+            for href in $(grep -oE 'href="[^"#:]+\.(html|css|svg|js)"' "$page" | sed -E 's/href="([^"]+)"/\1/' | grep -v '^/'); do
+              [ -f "$dir/$href" ] || { echo "::error file=$page::broken link $href"; missing=1; }
+            done
+          done
+          exit $missing
