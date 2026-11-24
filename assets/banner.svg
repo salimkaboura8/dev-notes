@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="dev-notes — field notes from shipping a real app">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f14"/>
+      <stop offset="1" stop-color="#0f1a17"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset=".5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+      <animate attributeName="x1" values="0;-1;0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1;0;1" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#10b981" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
+    </pattern>
+    <clipPath id="type"><rect x="80" y="196" width="0" height="40">
+      <animate attributeName="width" values="0;620;620;0" keyTimes="0;.45;.9;1" dur="7s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <style>
+      .t{font:800 76px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;letter-spacing:-2px}
+      .s{font:500 24px/1 ui-monospace,"SF Mono","JetBrains Mono",Consolas,monospace;fill:#9fb3c8}
+      .k{fill:#34d399}
+      .tag{font:600 15px/1 ui-monospace,Consolas,monospace;fill:#cbd5e1}
+      @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="20" fill="url(#grid)"/>
+
+  <circle cx="980" cy="70" r="190" fill="url(#glow)">
+    <animate attributeName="cx" values="980;900;980" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="70;120;70" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- floating dots -->
+  <g fill="#34d399">
+    <circle cx="860" cy="220" r="3" opacity=".7"><animate attributeName="cy" values="220;200;220" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="190" r="2" opacity=".5"><animate attributeName="cy" values="190;214;190" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="1110" cy="110" r="4" opacity=".35"><animate attributeName="cy" values="110;90;110" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="80" r="2.5" opacity=".45" fill="#22d3ee"><animate attributeName="cy" values="80;100;80" dur="6.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- note cards -->
+  <g transform="translate(830 120) rotate(-6)">
+    <rect width="250" height="130" rx="14" fill="#111827" stroke="#1f2937"/>
+    <rect x="20" y="22" width="120" height="10" rx="5" fill="#34d399" opacity=".9"/>
+    <rect x="20" y="48" width="200" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="66" width="170" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="84" width="185" height="8" rx="4" fill="#334155"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 -8;0 0" dur="6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(900 150) rotate(5)">
+    <rect width="230" height="110" rx="14" fill="#0f172a" stroke="#22d3ee" stroke-opacity=".35"/>
+    <text x="20" y="40" class="tag">$ ./gradlew bundleRelease</text>
+    <text x="20" y="70" class="tag" fill="#34d399">✓ BUILD SUCCESSFUL</text>
+    <animateTransform attributeName="transform" type="translate" additive="sum" values="0 0;0 6;0 0" dur="7s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="80" y="150" class="t" fill="url(#title)">dev-notes</text>
+  <g clip-path="url(#type)">
+    <text x="80" y="225" class="s"><tspan class="k">❯</tspan> problem → why → fix → check</text>
+  </g>
+  <rect x="80" y="205" width="12" height="26" fill="#34d399">
+    <animate attributeName="x" values="80;700;700;80" keyTimes="0;.45;.9;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
