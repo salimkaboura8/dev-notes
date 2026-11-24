@@ -7,6 +7,7 @@ Each note is something that cost time once, written down so it doesn't cost time
 |---|---|
 | [i18n-device-language](notes/i18n-device-language.md) | Default to the phone/browser language, keep the user's choice |
 | [github-ssh-windows](notes/github-ssh-windows.md) | Fix "Permission denied (publickey)" when the key is accepted |
+| [android-aab-jdk](notes/android-aab-jdk.md) | Capacitor 8 release AAB and the JDK 21 toolchain |
 
 ## Stack
 Ionic 8 · Angular · Capacitor 8 · FastAPI · Supabase (Postgres + RLS) · Vercel
