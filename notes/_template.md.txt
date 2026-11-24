@@ -1,0 +1,24 @@
+---
+title: One-line title of the lesson
+summary: What happened and what fixed it, in one sentence (160 characters max).
+tags: [topic, tool]
+date: 2026-01-31
+---
+
+# One-line title of the lesson
+
+## Problem
+What you saw: the error message, the symptom, who was affected.
+
+## Why
+The real cause — not the first guess.
+
+## Fix
+The smallest change that works, with code.
+
+```ts
+// example
+```
+
+## Check
+How to prove it is fixed, and how to notice if it comes back.
