@@ -1,0 +1,17 @@
+{
+  "name": "dev-notes",
+  "private": true,
+  "type": "module",
+  "description": "Practical notes from shipping an Ionic/Capacitor + FastAPI + Supabase app",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "serve": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "highlight.js": "^11.11.1",
+    "marked": "^15.0.0",
+    "marked-highlight": "^2.2.1"
+  },
+  "license": "MIT"
+}
