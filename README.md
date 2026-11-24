@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://salimkaboura8.github.io/dev-notes/"><img alt="Read online" src="https://img.shields.io/badge/read-online-34d399?style=for-the-badge&logo=githubpages&logoColor=white"></a>
   <a href="https://github.com/salimkaboura8/dev-notes/actions/workflows/check.yml"><img alt="Notes check" src="https://img.shields.io/github/actions/workflow/status/salimkaboura8/dev-notes/check.yml?branch=main&style=for-the-badge&label=notes%20check"></a>
-  <img alt="Notes" src="https://img.shields.io/badge/notes-8-22d3ee?style=for-the-badge">
+  <img alt="Notes" src="https://img.shields.io/badge/notes-9-22d3ee?style=for-the-badge">
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/license-MIT-64748b?style=for-the-badge"></a>
 </p>
 
@@ -31,6 +31,7 @@
 | [Let Postgres RLS be your authorization layer](notes/supabase-rls-forward-jwt.md) | An API in front of Supabase forwards the caller's JWT, so row-level security decides — not hand-written checks. | `supabase` `postgres` `fastapi` `security` |
 | [OnPush everywhere, and the one line you must not forget](notes/angular-onpush-markforcheck.md) | With ChangeDetectionStrategy.OnPush, async state changes don't render until you call markForCheck(). | `angular` `ionic` `performance` |
 | [Push to main = production, safely](notes/vercel-deploy-gated-by-ci.md) | Vercel Deployment Checks hold the release until CI is green, and a /health version proves what is live. | `vercel` `github-actions` `ci` `deploy` |
+| [The dependency that only existed on my laptop](notes/python-deps-drift.md) | pyproject.toml and requirements.txt drifted; production crashed on import. A 10-line CI check prevents it. | `python` `fastapi` `ci` `vercel` |
 <!-- notes:end -->
 
 ## 🧭 How a note works
