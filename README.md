@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://salimkaboura8.github.io/dev-notes/"><img alt="Read online" src="https://img.shields.io/badge/read-online-34d399?style=for-the-badge&logo=githubpages&logoColor=white"></a>
   <a href="https://github.com/salimkaboura8/dev-notes/actions/workflows/check.yml"><img alt="Notes check" src="https://img.shields.io/github/actions/workflow/status/salimkaboura8/dev-notes/check.yml?branch=main&style=for-the-badge&label=notes%20check"></a>
-  <img alt="Notes" src="https://img.shields.io/badge/notes-3-22d3ee?style=for-the-badge">
+  <img alt="Notes" src="https://img.shields.io/badge/notes-4-22d3ee?style=for-the-badge">
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/license-MIT-64748b?style=for-the-badge"></a>
 </p>
 
@@ -26,6 +26,7 @@
 | [Capacitor 8 release AAB needs a JDK 21 toolchain](notes/android-aab-jdk.md) | bundleRelease fails with JDK 17 or 25 — Android Studio already ships the JDK 21 you need. | `android` `capacitor` `gradle` |
 | [Default to the device language, keep the user's choice](notes/i18n-device-language.md) | First launch follows the phone or browser; an explicit pick sticks forever, even if iOS wipes WebView storage. | `i18n` `capacitor` `angular` |
 | [GitHub SSH on Windows — key accepted, push still denied](notes/github-ssh-windows.md) | "Permission denied (publickey)" while GitHub says it accepts your key means nobody can unlock the passphrase. | `git` `windows` `ssh` |
+| [Let Postgres RLS be your authorization layer](notes/supabase-rls-forward-jwt.md) | An API in front of Supabase forwards the caller's JWT, so row-level security decides — not hand-written checks. | `supabase` `postgres` `fastapi` `security` |
 <!-- notes:end -->
 
 ## 🧭 How a note works
